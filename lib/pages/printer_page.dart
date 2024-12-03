@@ -62,7 +62,7 @@ class _PrinterPageState extends State<PrinterPage> {
     }
 
     final List<BluetoothInfo> listResult =
-    await PrintBluetoothThermal.pairedBluetooths;
+        await PrintBluetoothThermal.pairedBluetooths;
 
     setState(() {
       items = listResult;
@@ -74,7 +74,7 @@ class _PrinterPageState extends State<PrinterPage> {
       connected = false;
     });
     final bool result =
-    await PrintBluetoothThermal.connect(macPrinterAddress: mac);
+        await PrintBluetoothThermal.connect(macPrinterAddress: mac);
 
     if (result) {
       connected = true;
@@ -103,7 +103,10 @@ class _PrinterPageState extends State<PrinterPage> {
         centerTitle: true,
         title: const Text(
           'Kelola Printer',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),

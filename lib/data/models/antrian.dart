@@ -50,17 +50,3 @@ class Antrian {
   }
 }
 
-var dataAntrian = [
-  Antrian(id: 1, nama: 'Teller', noAntrian: 'A-1', isActive: true),
-  Antrian(id: 2, nama: 'STNK', noAntrian: 'B-2', isActive: true),
-  Antrian(id: 3, nama: 'SIM', noAntrian: 'C-3', isActive: true),
-  Antrian(id: 1, nama: 'Teller', noAntrian: 'A-1', isActive: true),
-  Antrian(id: 2, nama: 'STNK', noAntrian: 'B-2', isActive: true),
-  Antrian(id: 3, nama: 'SIM', noAntrian: 'C-3', isActive: true),
-  Antrian(id: 1, nama: 'Teller', noAntrian: 'A-1', isActive: true),
-  Antrian(id: 2, nama: 'STNK', noAntrian: 'B-2', isActive: true),
-  Antrian(id: 3, nama: 'SIM', noAntrian: 'C-3', isActive: true),
-  Antrian(id: 1, nama: 'Teller', noAntrian: 'A-1', isActive: true),
-  Antrian(id: 2, nama: 'STNK', noAntrian: 'B-2', isActive: true),
-  Antrian(id: 3, nama: 'SIM', noAntrian: 'C-3', isActive: true),
-];

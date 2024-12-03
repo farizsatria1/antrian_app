@@ -45,7 +45,10 @@ class _AntrianPageState extends State<AntrianPage> {
         ),
         title: const Text(
           "Kelola Antrian",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
           IconButton(
@@ -67,10 +70,11 @@ class _AntrianPageState extends State<AntrianPage> {
               itemCount: listAntrian.length,
               itemBuilder: (context, index) {
                 return Card(
-                  color: AppColors.card,
+                  elevation: 1,
+                  color: AppColors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
+                      borderRadius: BorderRadius.circular(10),
+                      side: const BorderSide(color: Colors.grey)),
                   child: ListTile(
                     title: Text(
                       listAntrian[index].nama,
@@ -87,7 +91,7 @@ class _AntrianPageState extends State<AntrianPage> {
                       ),
                     ),
                     trailing: IconButton(
-                      icon: const Icon(Icons.arrow_forward),
+                      icon: const Icon(Icons.edit),
                       onPressed: () {
                         //show dialog update antrian
                         showDialog(
@@ -107,6 +111,7 @@ class _AntrianPageState extends State<AntrianPage> {
                                       labelText: 'Nama Antrian',
                                     ),
                                   ),
+                                  const SizedBox(height: 10),
                                   TextField(
                                     controller: _noAntrianController,
                                     decoration: const InputDecoration(
@@ -182,6 +187,7 @@ class _AntrianPageState extends State<AntrianPage> {
                           labelText: 'Nama Antrian',
                         ),
                       ),
+                      const SizedBox(height: 10),
                       TextField(
                         controller: _noAntrianController,
                         decoration: const InputDecoration(
